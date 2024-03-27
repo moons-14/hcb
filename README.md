@@ -1,4 +1,4 @@
-oclif-hello-world
+# Hyper Command Browser
 =================
 
 oclif example Hello World CLI
