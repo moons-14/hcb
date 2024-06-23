@@ -1,6 +1,6 @@
 {
     "name": "hcb",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "Commands cannot be memorized.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",

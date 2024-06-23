@@ -14,7 +14,7 @@ const program = new Command();
 console.log(chalk.cyan(figlet.textSync('HCB', { horizontalLayout: 'full' })));
 
 program
-    .version('1.0.1')
+    .version('1.1.0')
     .description('Hyper Command Browser - Save the commands you execute most often and recall them immediately!');
 
 program
@@ -24,7 +24,12 @@ program
 
 program
     .command('search [query]')
-    .description('Search for a command')
+    .description('Search and run for a command')
+    .action(search);
+
+program
+    .command('run [query]')
+    .description('Search and run for a command')
     .action(search);
 
 program
