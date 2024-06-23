@@ -14,11 +14,11 @@ const program = new Command();
 console.log(chalk.cyan(figlet.textSync('HCB', { horizontalLayout: 'full' })));
 
 program
-    .version('1.0.0')
+    .version('1.0.1')
     .description('Hyper Command Browser - Save the commands you execute most often and recall them immediately!');
 
 program
-    .command('r')
+    .command('add')
     .description('Register a new command')
     .action(add);
 
