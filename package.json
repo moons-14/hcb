@@ -1,7 +1,7 @@
 {
     "name": "hcb",
     "version": "1.0.0",
-    "description": "Hyper Command Browser - A modern CLI for managing and searching commands",
+    "description": "Commands cannot be memorized.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "bin": {
@@ -13,14 +13,18 @@
         "dev": "ts-node src/index.ts",
         "test": "jest"
     },
+    "homepage": "https://github.com/moons-14/hcb",
+    "bugs": "https://github.com/moons-14/hcb/issues",
+    "repository": "moons-14/hcb",
+    "license": "MIT",
+    "author": "moons-14",
+    "type": "module",
     "keywords": [
         "cli",
         "command",
         "search",
         "vector"
     ],
-    "author": "Your Name",
-    "license": "MIT",
     "dependencies": {
         "commander": "^9.4.1",
         "client-vector-search": "^0.2.0",
