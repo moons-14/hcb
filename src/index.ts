@@ -8,17 +8,14 @@ import { search } from './commands/search';
 import { list } from './commands/list';
 import { config } from './commands/config';
 import { reset } from './commands/reset';
-import { readFileSync } from 'fs';
-import { join } from 'path';
+import { VERSION } from './version';
 
 const program = new Command();
-
-const packageJson = JSON.parse(readFileSync(join(__dirname, '..', 'package.json'), 'utf-8'));
 
 console.log(chalk.cyan(figlet.textSync('HCB', { horizontalLayout: 'full' })));
 
 program
-    .version('1.1.1')
+    .version(VERSION)
     .description('Hyper Command Browser - Save the commands you execute most often and recall them immediately!');
 
 program

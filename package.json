@@ -12,7 +12,8 @@
         "start": "node dist/index.js",
         "dev": "ts-node src/index.ts",
         "test": "jest",
-        "semantic-release": "semantic-release"
+        "semantic-release": "semantic-release",
+        "update-version": "node -e \"const fs=require('fs');const version=process.env.npm_package_version;fs.writeFileSync('src/version.ts',`export const VERSION = '${version}';`);\""
     },
     "homepage": "https://github.com/moons-14/hcb",
     "bugs": "https://github.com/moons-14/hcb/issues",
@@ -38,6 +39,7 @@
     },
     "devDependencies": {
         "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/exec": "^6.0.3",
         "@semantic-release/git": "^10.0.1",
         "@types/figlet": "^1.5.5",
         "@types/jest": "^27.4.0",
