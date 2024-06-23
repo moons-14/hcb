@@ -14,7 +14,7 @@ const program = new Command();
 console.log(chalk.cyan(figlet.textSync('HCB', { horizontalLayout: 'full' })));
 
 program
-    .version('1.1.0')
+    .version('1.1.1')
     .description('Hyper Command Browser - Save the commands you execute most often and recall them immediately!');
 
 program
@@ -24,11 +24,7 @@ program
 
 program
     .command('search [query]')
-    .description('Search and run for a command')
-    .action(search);
-
-program
-    .command('run [query]')
+    .alias('run [query]')
     .description('Search and run for a command')
     .action(search);
 
@@ -46,6 +42,15 @@ program
     .command('reset')
     .description('Reset all settings')
     .action(reset);
+
+program
+    .action((_, command) => {
+        // コマンドが指定されていない場合、検索を実行
+        if (command.args.length === 0) {
+            search();
+        }
+    });
+
 
 program.parse(process.argv);
 

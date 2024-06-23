@@ -38,7 +38,7 @@ export async function add() {
     const spinner = ora('Processing command...').start();
 
     try {
-        const embedding = await getEmbedding(command);
+        const embedding = await getEmbedding(command + (description || ""));
         const newCommand: StoredCommand = {
             id: Date.now().toString(),
             command,
