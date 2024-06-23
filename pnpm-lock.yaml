@@ -34,6 +34,9 @@ dependencies:
     version: 6.8.2
 
 devDependencies:
+  '@semantic-release/changelog':
+    specifier: ^6.0.3
+    version: 6.0.3(semantic-release@19.0.5)
   '@semantic-release/git':
     specifier: ^10.0.1
     version: 10.0.1(semantic-release@19.0.5)
@@ -932,6 +935,19 @@ packages:
   /@protobufjs/utf8@1.1.0:
     resolution: {integrity: sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==}
     dev: false
+
+  /@semantic-release/changelog@6.0.3(semantic-release@19.0.5):
+    resolution: {integrity: sha512-dZuR5qByyfe3Y03TpmCvAxCyTnp7r5XwtHRf/8vD9EAn4ZWbavUX8adMtXYzE86EVh0gyLA7lm5yW4IV30XUag==}
+    engines: {node: '>=14.17'}
+    peerDependencies:
+      semantic-release: '>=18.0.0'
+    dependencies:
+      '@semantic-release/error': 3.0.0
+      aggregate-error: 3.1.0
+      fs-extra: 11.2.0
+      lodash: 4.17.21
+      semantic-release: 19.0.5
+    dev: true
 
   /@semantic-release/commit-analyzer@9.0.2(semantic-release@19.0.5):
     resolution: {integrity: sha512-E+dr6L+xIHZkX4zNMe6Rnwg4YQrWNXK+rNsvwOPpdFppvZO1olE2fIgWhv89TkQErygevbjsZFSIxp+u6w2e5g==}
