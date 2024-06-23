@@ -54,11 +54,11 @@ export async function search(query?: string) {
             r.object.command,
             r.object.description || '',
             chalk.green(r.similarity.toFixed(2)),
-        ]);
+        ]).filter(d => parseFloat(d[3]) > 0.5);
 
         process.stdout.write(table([
-            [chalk.bold('No.'), chalk.bold('Command'), chalk.bold('Description'), chalk.bold('Similarity')],
-            ...data,
+            [chalk.bold('No.'), chalk.bold('Command'), chalk.bold('Description')],
+            ...data.map(d => [d[0], d[1], d[2]]),
         ]) + '\n');
 
         const { selected } = await prompts({

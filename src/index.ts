@@ -6,6 +6,8 @@ import figlet from 'figlet';
 import { add } from './commands/add';
 import { search } from './commands/search';
 import { list } from './commands/list';
+import { config } from './commands/config';
+import { reset } from './commands/reset';
 
 const program = new Command();
 
@@ -29,6 +31,16 @@ program
     .command('list')
     .description('List all registered commands')
     .action(list);
+
+program
+    .command('config')
+    .description('Display config file path and optionally open it in the default editor')
+    .action(config);
+
+program
+    .command('reset')
+    .description('Reset all settings')
+    .action(reset);
 
 program.parse(process.argv);
 
