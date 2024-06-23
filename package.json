@@ -11,7 +11,8 @@
         "build": "tsc",
         "start": "node dist/index.js",
         "dev": "ts-node src/index.ts",
-        "test": "jest"
+        "test": "jest",
+        "semantic-release": "semantic-release"
     },
     "homepage": "https://github.com/moons-14/hcb",
     "bugs": "https://github.com/moons-14/hcb/issues",
@@ -46,6 +47,10 @@
         "ts-node": "^10.4.0",
         "jest": "^27.4.5",
         "@types/jest": "^27.4.0",
-        "ts-jest": "^27.1.2"
+        "ts-jest": "^27.1.2",
+        "semantic-release": "^19.0.3"
+    },
+    "engines": {
+        "node": ">=18.0.0"
     }
 }

@@ -6,10 +6,10 @@ import { promisify } from 'util';
 
 const execAsync = promisify(exec);
 
-const config = new Conf({ projectName: 'hcb' });
+const _config = new Conf({ projectName: 'hcb' });
 
-export async function configCommand() {
-    process.stdout.write(chalk.cyan(`Config file path: ${config.path}\n`));
+export async function config() {
+    process.stdout.write(chalk.cyan(`Config file path: ${_config.path}\n`));
 
     const { shouldOpen } = await prompts({
         type: 'confirm',
@@ -21,9 +21,9 @@ export async function configCommand() {
     if (shouldOpen) {
         try {
             if (process.platform === 'win32') {
-                await execAsync(`start ${config.path}`);
+                await execAsync(`start ${_config.path}`);
             } else {
-                await execAsync(`open ${config.path}`);
+                await execAsync(`open ${_config.path}`);
             }
             process.stdout.write(chalk.green('Config file opened in your default editor.\n'));
         } catch (error) {
