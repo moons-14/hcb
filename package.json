@@ -22,25 +22,27 @@
     "author": "Your Name",
     "license": "MIT",
     "dependencies": {
-        "boxen": "^5.1.2",
-        "chalk": "^4.1.2",
-        "client-vector-search": "^0.2.0",
         "commander": "^9.4.1",
-        "conf": "^10.2.0",
-        "figlet": "^1.5.2",
-        "inquirer": "^8.2.5",
+        "client-vector-search": "^0.2.0",
+        "chalk": "^4.1.2",
         "ora": "^5.4.1",
-        "table": "^6.8.1"
+        "conf": "^10.2.0",
+        "boxen": "^5.1.2",
+        "table": "^6.8.1",
+        "figlet": "^1.5.2",
+        "prompts": "^2.4.2"
     },
     "devDependencies": {
-        "@biomejs/biome": "1.8.2",
-        "@types/figlet": "^1.5.5",
-        "@types/inquirer": "^8.2.5",
-        "@types/jest": "^27.4.0",
         "@types/node": "^16.11.12",
-        "jest": "^27.4.5",
-        "ts-jest": "^27.1.2",
+        "@types/prompts": "^2.0.14",
+        "@types/figlet": "^1.5.5",
+        "@typescript-eslint/eslint-plugin": "^5.9.0",
+        "@typescript-eslint/parser": "^5.9.0",
+        "eslint": "^8.6.0",
+        "typescript": "^4.5.4",
         "ts-node": "^10.4.0",
-        "typescript": "^4.5.4"
+        "jest": "^27.4.5",
+        "@types/jest": "^27.4.0",
+        "ts-jest": "^27.1.2"
     }
 }
