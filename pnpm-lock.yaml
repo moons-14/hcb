@@ -34,6 +34,9 @@ dependencies:
     version: 6.8.2
 
 devDependencies:
+  '@semantic-release/git':
+    specifier: ^10.0.1
+    version: 10.0.1(semantic-release@19.0.5)
   '@types/figlet':
     specifier: ^1.5.5
     version: 1.5.8
@@ -951,6 +954,25 @@ packages:
   /@semantic-release/error@3.0.0:
     resolution: {integrity: sha512-5hiM4Un+tpl4cKw3lV4UgzJj+SmfNIDCLLw0TepzQxz9ZGV5ixnqkzIVF+3tp0ZHgcMKE+VNGHJjEeyFG2dcSw==}
     engines: {node: '>=14.17'}
+    dev: true
+
+  /@semantic-release/git@10.0.1(semantic-release@19.0.5):
+    resolution: {integrity: sha512-eWrx5KguUcU2wUPaO6sfvZI0wPafUKAMNC18aXY4EnNcrZL86dEmpNVnC9uMpGZkmZJ9EfCVJBQx4pV4EMGT1w==}
+    engines: {node: '>=14.17'}
+    peerDependencies:
+      semantic-release: '>=18.0.0'
+    dependencies:
+      '@semantic-release/error': 3.0.0
+      aggregate-error: 3.1.0
+      debug: 4.3.5
+      dir-glob: 3.0.1
+      execa: 5.1.1
+      lodash: 4.17.21
+      micromatch: 4.0.7
+      p-reduce: 2.1.0
+      semantic-release: 19.0.5
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@semantic-release/github@8.1.0(semantic-release@19.0.5):
