@@ -18,7 +18,6 @@
     "repository": "moons-14/hcb",
     "license": "MIT",
     "author": "moons-14",
-    "type": "module",
     "keywords": [
         "cli",
         "command",
