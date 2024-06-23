@@ -15,7 +15,7 @@ console.log(chalk.cyan(figlet.textSync('HCB', { horizontalLayout: 'full' })));
 
 program
     .version('1.0.0')
-    .description('Hyper Command Browser - A modern CLI for managing and searching commands');
+    .description('Hyper Command Browser - Save the commands you execute most often and recall them immediately!');
 
 program
     .command('r')
